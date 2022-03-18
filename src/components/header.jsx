@@ -1,7 +1,9 @@
-import React, { Component } from "react";
+import React, { PureComponent } from "react";
 
-class Header extends Component {
+class Header extends PureComponent {
   render() {
+    console.log("Header");
+
     return (
       <header className="header">
         <i className="fab fa-pagelines header-logo"></i>
