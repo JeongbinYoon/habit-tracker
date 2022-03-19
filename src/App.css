@@ -34,12 +34,21 @@ button {
 }
 
 /* AddForm */
+.add-form {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
 .add-input {
+  flex-grow: 9;
   font-size: 1.5rem;
-  margin: 0 0.2em;
 }
 
 .add-button {
+  flex-grow: 1;
   height: 100%;
   font-size: 1.3rem;
   padding: 0.3em 0.5em;
@@ -49,9 +58,16 @@ button {
 
 /* Habit */
 .habit {
+  display: flex;
+  align-items: center;
+  width: 80%;
   font-size: 2.5rem;
   padding: 0.5rem;
   list-style: none;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  border-left: 5px solid yellowgreen;
+  border-bottom: 3px solid #ccc;
 }
 
 .habit-count {
@@ -66,6 +82,10 @@ button {
   background-color: darkseagreen;
   color: white;
   border-radius: 50%;
+}
+
+.habit-btns {
+  margin-left: auto;
 }
 
 .habit-button {
@@ -89,7 +109,18 @@ button {
   color: darkred;
 }
 
+.habits {
+  padding: 0;
+}
+
 .habits-reset {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.habits-resetBtn {
+  margin-left: auto;
   font-size: 1.5rem;
   padding: 0.2em 1em;
   background-color: green;

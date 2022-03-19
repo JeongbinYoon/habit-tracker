@@ -11,7 +11,7 @@ const HabitAddForm = memo((props) => {
     const name = inputRef.current.value;
     name && props.onAdd(name);
     // this.inputRef.current.value = "";
-    this.formRef.current.reset();
+    formRef.current.reset();
   };
 
   return (
@@ -20,7 +20,7 @@ const HabitAddForm = memo((props) => {
         ref={inputRef}
         type="text"
         className="add-input"
-        placeholder="Please Enter your habit"
+        placeholder="Please enter your habit"
       />
       <button className="add-button">Add</button>
     </form>
